@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boardgame</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Boardgame</a>
+              <div class="dropdown-content">
+                <a href="cadBoardgame.html">Cadastrar</a>
+                <a href="updBoardgame.html">Atualizar</a>
+                <a href="srcBoardgame.html">Buscar</a>
+                <a href="dltBoardgame.html">Deletar</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Funcionário</a>
+              <div class="dropdown-content">
+                <a href="cadFuncionario.html">Cadastrar</a>
+                <a href="updFuncionario.html">Atualizar</a>
+                <a href="srcFuncionario.html">Buscar</a>
+                <a href="dltFuncionario.html">Deletar</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Cliente</a>
+              <div class="dropdown-content">
+                <a href="cadCliente.html">Cadastrar</a>
+                <a href="updCliente.html">Atualizar</a>
+                <a href="srcCliente.html">Buscar</a>
+                <a href="dltCliente.html">Deletar</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Aluguel</a>
+              <div class="dropdown-content">
+                <a href="cadAluguel.html">Cadastrar</a>
+                <a href="updAluguel.html">Atualizar</a>
+                <a href="srcAluguel.html">Buscar</a>
+                <a href="dltAluguel.html">Deletar</a>
+              </div>
+            </li>
+        </ul>
+        <div>
+            <form method="post" action="cadBoardgame.php">
+                <fieldset>
+                    <legend>Cadastro de Boardgame</legend>
+                    <label>Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Entre com o Nome">
+
+                    <label>Fabricante</label>
+                    <input type="text" id="fabricante" name="fabricante" placeholder="Entre com o Fabricante">
+
+                    <label>Genero</label>
+                    <input type="text" id="genero" name="genero" placeholder="Entre com o Genero">
+
+                    <label>Duração Partida</label>
+                    <input type="text" id="duracao" name="duracao" placeholder="Entre com a Duração da Partida">
+
+                    <label>Quantidade de Jogadores</label>
+                    <input type="number" id="qtdPlayers" name="qtdPlayers" placeholder="Entre com a Quantidade de Jogadores">
+
+                    <label>Quantidade em Estoque</label>
+                    <input type="number" id="estoque" name="estoque" placeholder="Entre com a Quantidade em Estoque">
+                </fieldset>
+                <input type="submit" value="SALVAR">
+            </form>
+        </div>
+    </body>
+</html>
